@@ -14,9 +14,9 @@ class TasksController < ApplicationController
     redirect_to tasks_path
   end
 
-  def show;end
+  def show; end
 
-  def edit;end
+  def edit; end
 
   def update
     @task.update(task_params)
@@ -25,7 +25,6 @@ class TasksController < ApplicationController
 
   def destroy
     @task.destroy
-    # No need for app/views/restaurants/destroy.html.erb
     redirect_to tasks_path, status: :see_other
   end
 
